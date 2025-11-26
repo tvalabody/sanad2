@@ -65,18 +65,12 @@
             border-radius: 50%;
             border: 5px solid rgba(255, 255, 255, 0.3);
             margin: 0 auto 20px;
-            background: #e0e0e0;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             z-index: 1;
-        }
-
-        .profile-img::before {
-            content: 'صورة';
-            color: #999;
-            font-size: 16px;
+            object-fit: cover;
         }
 
         h1 {
@@ -144,7 +138,8 @@
             gap: 30px;
             margin-top: 30px;
         }
-.card {
+
+        .card {
             background: white;
             border-radius: 15px;
             padding: 30px;
@@ -306,6 +301,7 @@
             opacity: 1;
             transform: translateY(0);
         }
+        
         /* التجاوب مع الشاشات المختلفة */
         @media (max-width: 768px) {
             h1 {
@@ -337,7 +333,7 @@
     <!-- الهيدر -->
     <header>
         <div class="container">
-            <div class="profile-img"></div>
+            <img src="https://a.top4top.io/p_3617siekx1.jpg" alt="صورة النائب مصطفى جبار سند المرياني" class="profile-img">
             <h1>مصطفى جبار سند المرياني</h1>
             <div class="subtitle">نائب في مجلس النواب العراقي - خبير اقتصادي ونفطي</div>
             <div class="quick-info">
